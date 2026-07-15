@@ -1,0 +1,132 @@
+
+.cal {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.cal-header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 10%;
+	font-weight: bold;
+	font-size: var(--font-size-xlarge);
+}
+
+.cal-header-left {
+	display: flex;
+	width: 10%;
+	align-items: center;
+	justify-content: center;
+}
+
+.cal-header-title {
+	display: flex;
+	width: 80%;
+	align-items: center;
+	justify-content: center;
+}
+
+.cal-header-right {
+	display: flex;
+	width: 10%;
+	align-items: center;
+	justify-content: center;
+}
+
+.cal-main {
+	width:  100%;
+	height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.cal-footer {
+	display: flex;
+	width: 100%;
+	height: 15%;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-accent1);
+	font-weight: bold;
+}
+
+.cal-weekcell {
+	width: 70%;
+	height: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cal-daycell {
+	width: 70%;
+	height: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.cal-daycell-out {
+	color: var(--font-color-dimmed);
+}
+
+.cal-daycell-today {
+	border: 0.5vmin solid var(--color-tertiary);
+}
+
+.theme-light .cal-daycell-selected {
+	background-color: var(--color-tertiary);
+	color: var(--font-color-dark);
+}
+
+.theme-dark .cal-daycell-selected {
+	background-color: var(--color-tertiary);
+	color: var(--font-color-light);
+}
+
+.cal-day-slot {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2vmin;
+	font-size: var(--font-size-small);
+	width: 100%;
+}
+
+.cal-day-slot::-webkit-scrollbar {
+  width: 2px;
+}
+
+.cal-day-slot-item {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1vmin;
+}
+
+.cal-day-slot-item-el {
+	width: 100%;
+	margin-bottom: 1.5vmin;
+	display: block;
+}
+
+.cal-day-slot-item-add {
+	width: 100%;
+	margin-top: 1vmin;
+	display: block;
+	cursor: pointer;
+}
+
+.cal-day-slot-item-del {
+	cursor: pointer;
+	text-align: right;
+	display: inline-block;
+	font-weight: bold;
+}
+

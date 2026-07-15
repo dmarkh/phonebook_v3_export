@@ -1,0 +1,125 @@
+@use 'sass:color';
+
+@use '@material/theme/color-palette';
+
+// Svelte Colors!
+@use '@material/theme/index' as theme with (
+  $primary: #005f89,
+  $secondary: #c4d0a6,
+  $surface: #fff,
+  $background: #eee,
+  $error: color-palette.$red-900
+);
+
+@use '@material/elevation/mdc-elevation';
+
+// Import all the styles for the classes.
+@use '@material/typography/mdc-typography';
+// The following classes become available:
+//   mdc-typography--headline1
+//   mdc-typography--headline2
+//   mdc-typography--headline3
+//   mdc-typography--headline4
+//   mdc-typography--headline5
+//   mdc-typography--headline6
+//   mdc-typography--subtitle1
+//   mdc-typography--subtitle2
+//   mdc-typography--body1
+//   mdc-typography--body2
+//   mdc-typography--caption
+//   mdc-typography--button
+//   mdc-typography--overline
+//   mdc-typography--body1
+
+// Import the mixins.
+@use '@material/typography/mixins' as typography;
+
+html,
+body {
+  background-color: #fbfff2;
+  color: theme.$on-surface;
+}
+
+a {
+  color: #40b3ff;
+}
+a:visited {
+  color: color.scale(#40b3ff, $lightness: -35%);
+}
+
+.mdc-drawer {
+	--mdc-theme-surface: #dfe9eb
+}
+
+.mdc-data-table__header-cell {
+	--mdc-theme-surface: #c4d0a6
+}
+
+.mdc-top-app-bar__row {
+	border-bottom: 0.5vmin solid #aad043;
+}
+
+.mdc-text-field__icon {
+	pointer-events: all !important;
+}
+
+//
+// Some defaults that may be helpful to you.
+// If you just want to use these, and not the classes, you can instead just
+// @use '@material/typography/mixins' as typography, and your CSS file will be
+// smaller.
+//
+html {
+  @include typography.typography('body1');
+}
+
+h1 {
+  @include typography.typography('headline1');
+}
+
+h2 {
+  @include typography.typography('headline2');
+}
+
+h3 {
+  @include typography.typography('headline3');
+}
+
+h4 {
+  @include typography.typography('headline4');
+}
+
+h5 {
+  @include typography.typography('headline5');
+}
+
+h6 {
+  @include typography.typography('headline6');
+}
+
+caption {
+  @include typography.typography('caption');
+}
+
+code,
+pre {
+  font-family: 'Roboto Mono', monospace;
+}
+
+small {
+  font-size: 0.9em;
+}
+
+big {
+  font-size: 1.1em;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+.mdc-text-field__input::-webkit-calendar-picker-indicator {
+	display: initial;
+}
+

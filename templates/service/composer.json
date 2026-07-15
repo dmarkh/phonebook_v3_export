@@ -1,0 +1,12 @@
+{
+    "require": {
+        "steverhoades/oauth2-openid-connect-client": "^2.0",
+        "codercat/jwk-to-pem": "^1.1",
+        "codewithkyrian/transformers": "^0.6.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "codewithkyrian/platform-package-installer": true
+        }
+    }
+}

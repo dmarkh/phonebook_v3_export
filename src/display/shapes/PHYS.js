@@ -1,0 +1,66 @@
+
+let PHYS = {};
+	PHYS.Geo = {};
+
+import { GeoBox } from './GeoBox.js';
+import { GeoSphe } from './GeoSphe';
+import { GeoCone } from './GeoCone';
+import { GeoCons } from './GeoCons';
+import { GeoEltu } from './GeoEltu';
+import { GeoCyl } from './GeoCyl';
+import { GeoPara } from './GeoPara';
+import { GeoTube } from './GeoTube';
+import { GeoTubs } from './GeoTubs';
+import { GeoPcon } from './GeoPcon';
+import { GeoPgon } from './GeoPgon';
+import { GeoHype } from './GeoHype';
+import { GeoCtub } from './GeoCtub';
+import { GeoTrd1 } from './GeoTrd1';
+import { GeoTrd2 } from './GeoTrd2';
+import { GeoTrd3 } from './GeoTrd3';
+import { GeoTrap } from './GeoTrap';
+import { GeoGtra } from './GeoGtra';
+import { GeoArb8 } from './GeoArb8';
+import { GeoParaboloid } from './GeoParaboloid';
+import { GeoTorus } from './GeoTorus';
+import { GeoXtru } from './GeoXtru';
+import { GeoSExtru } from './GeoSExtru';
+import { GeoEllipsoid } from './GeoEllipsoid';
+import { GeoEllipticalCone } from './GeoEllipticalCone';
+import { GeoTet } from './GeoTet';
+import { GeoOrb } from './GeoOrb';
+import { GeoTessellatedSolid } from './GeoTessellatedSolid';
+
+import { CSG } from '../CSG/CSG.js';
+PHYS.CSG = CSG;
+
+PHYS.Geo.box  = GeoBox;
+PHYS.Geo.sphe = GeoSphe;
+PHYS.Geo.cone = GeoCone;
+PHYS.Geo.cons = GeoCons;
+PHYS.Geo.eltu = GeoEltu;
+PHYS.Geo.cyl  = GeoCyl;
+PHYS.Geo.para = GeoPara;
+PHYS.Geo.tube = GeoTube;
+PHYS.Geo.tubs = GeoTubs;
+PHYS.Geo.pcon = GeoPcon;
+PHYS.Geo.pgon = GeoPgon;
+PHYS.Geo.hype = GeoHype;
+PHYS.Geo.ctub = GeoCtub;
+PHYS.Geo.trd1 = GeoTrd1;
+PHYS.Geo.trd2 = GeoTrd2;
+PHYS.Geo.trd3 = GeoTrd3;
+PHYS.Geo.trap = GeoTrap;
+PHYS.Geo.gtra = GeoGtra;
+PHYS.Geo.arb8 = GeoArb8;
+PHYS.Geo.paraboloid = GeoParaboloid;
+PHYS.Geo.torus = GeoTorus;
+PHYS.Geo.xtru = GeoXtru;
+PHYS.Geo.sxtru = GeoSExtru;
+PHYS.Geo.ellipsoid = GeoEllipsoid;
+PHYS.Geo.elcone = GeoEllipticalCone;
+PHYS.Geo.tet = GeoTet;
+PHYS.Geo.orb = GeoOrb;
+PHYS.Geo.tessellated = GeoTessellatedSolid;
+
+export default PHYS;

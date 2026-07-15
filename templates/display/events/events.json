@@ -1,0 +1,22 @@
+[
+	{
+		"desc": "ePIC Event (A.K.)",
+		"file": "event-alexander.json"
+	},
+	{
+		"desc": "ePIC Event - 160622",
+		"file": "event-160622.json"
+	},
+	{
+		"desc": "ePIC Event - 160623",
+		"file": "event-160623.json"
+	},
+	{
+		"desc": "Test Event 1",
+		"file": "event1.json"
+	},
+	{
+		"desc": "Test Event 2 (gzipped)",
+		"file": "event2.json.gz"
+	}
+]

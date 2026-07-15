@@ -1,0 +1,67 @@
+@import "normalize.css" print, screen;
+@import "calendar.css" print, screen;
+
+* {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	font-size-adjust: none;
+	scrollbar-width: thin;
+	-webkit-tap-highlight-color: transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+:root {
+	font-family: Roboto, helvetica, verdana, arial;
+	font-size: 100%;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	-webkit-tap-highlight-color: transparent;
+	user-drag: none;
+	-webkit-user-drag: none;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#app-container {
+  position: absolute;
+  top:  0;
+  left: 0;
+  width:  100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.photoedit-image {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 1vmin;
+    margin-top: 2vmin;
+    border-radius: 1vmin;
+    border: 0.5vmin solid #DDD;
+    outline: 0.5vmin solid #777;
+}
+
+.inst-autocomplete, .inst-autocomplete .mdc-text-field {
+    width: 100% !important;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

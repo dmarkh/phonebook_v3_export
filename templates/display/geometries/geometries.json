@@ -1,0 +1,18 @@
+[
+	{
+		"desc": "ePIC/ns GEOMETRY",
+		"file": "beast-ns.gdml"
+	},
+	{
+		"desc": "ePIC GEOMETRY",
+		"file": "beast.gdml"
+	},
+	{
+		"desc": "SPHENIX TPC GEOMETRY",
+		"file": "sPHENIX_TPC.gdml"
+	},
+	{
+		"desc": "SPHENIX TRACKERS",
+		"file": "sPHENIX_trackers.gdml"
+	}
+]
