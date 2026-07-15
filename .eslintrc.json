@@ -1,0 +1,19 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+	"ignorePatterns": [ "**/vendor/*.js", "**/vendor/*/*.js" ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+		"no-mixed-spaces-and-tabs": 0,
+		"no-loss-of-precision": 0
+    },
+	"globals": {
+        "process": "readonly"
+    }
+}
